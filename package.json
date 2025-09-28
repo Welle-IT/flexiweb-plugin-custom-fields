@@ -126,16 +126,16 @@
   "devDependencies": {
     "@swc/cli": "^0.7.8",
     "@swc/core": "^1.13.5",
-    "@types/react": "19.1.8",
+    "@types/react": "19.1.15",
     "@types/react-dom": "19.1.6",
     "copyfiles": "^2.4.1",
-    "react": "19.1.0",
+    "react": "19.1.1",
     "react-dom": "19.1.0",
     "rimraf": "^6.0.1",
     "typescript": "^5.7.3"
   },
   "peerDependencies": {
-    "react": "19.1.0",
+    "react": "19.1.1",
     "react-dom": "19.1.0",
     "payload": "3.57.0",
     "@payloadcms/ui": "3.57.0",
