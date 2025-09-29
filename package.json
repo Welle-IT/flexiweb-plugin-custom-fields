@@ -103,6 +103,16 @@
         "import": "./dist/exports/rsc.js",
         "types": "./dist/exports/rsc.d.ts",
         "default": "./dist/exports/rsc.js"
+      },
+      "./AlertBox": {
+        "import": "./dist/exports/AlertBox/index.js",
+        "types": "./dist/exports/AlertBox/index.d.ts",
+        "default": "./dist/exports/AlertBox/index.js"
+      },
+      "./AlertBox/client": {
+        "import": "./dist/exports/AlertBox/client.js",
+        "types": "./dist/exports/AlertBox/client.d.ts",
+        "default": "./dist/exports/AlertBox/client.js"
       }
     },
     "main": "./dist/index.js",
