@@ -70,10 +70,10 @@ export const pluginCustomFields =
     }
 
     config.admin.components.beforeDashboard.push(
-      `plugin-custom-fields/client#BeforeDashboardClient`,
+      `@flexiweb/custom-fields/client#BeforeDashboardClient`,
     )
     config.admin.components.beforeDashboard.push(
-      `plugin-custom-fields/rsc#BeforeDashboardServer`,
+      `@flexiweb/custom-fields/rsc#BeforeDashboardServer`,
     )
 
     config.endpoints.push({

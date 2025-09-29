@@ -16,20 +16,12 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@payload-config": [
-        "./payload.config.ts"
-      ],
-      "plugin-custom-fields": [
-        "../src/index.ts"
-      ],
-      "plugin-custom-fields/client": [
-        "../src/exports/client.ts"
-      ],
-      "plugin-custom-fields/rsc": [
-        "../src/exports/rsc.ts"
-      ]
+      "@payload-config": ["./payload.config.ts"],
+      "@flexiweb/custom-fields": ["../src/index.ts"],
+      "@flexiweb/custom-fields/client": ["../src/exports/client.ts"],
+      "@flexiweb/custom-fields/rsc": ["../src/exports/rsc.ts"]
     },
     "noEmit": true,
-    "emitDeclarationOnly": false,
+    "emitDeclarationOnly": false
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "plugin-custom-fields",
+  "name": "@flexiweb/custom-fields",
   "version": "1.0.0",
   "description": "A blank template to get started with Payload 3.0",
   "license": "MIT",
@@ -10,15 +10,15 @@
       "types": "./src/index.ts",
       "default": "./src/index.ts"
     },
-    "./client": {
-      "import": "./src/exports/client.ts",
-      "types": "./src/exports/client.ts",
-      "default": "./src/exports/client.ts"
+    "./AlertBox": {
+      "import": "./src/exports/AlertBox/index.ts",
+      "types": "./src/exports/AlertBox/index.ts",
+      "default": "./src/exports/AlertBox/index.ts"
     },
-    "./rsc": {
-      "import": "./src/exports/rsc.ts",
-      "types": "./src/exports/rsc.ts",
-      "default": "./src/exports/rsc.ts"
+    "./AlertBox/client": {
+      "import": "./src/exports/AlertBox/client.ts",
+      "types": "./src/exports/AlertBox/client.ts",
+      "default": "./src/exports/AlertBox/client.ts"
     }
   },
   "main": "./src/index.ts",
@@ -30,7 +30,7 @@
     "build": "pnpm copyfiles && pnpm build:types && pnpm build:swc",
     "build:swc": "swc ./src -d ./dist --config-file .swcrc --strip-leading-paths",
     "build:types": "tsc --outDir dist --rootDir ./src",
-    "clean": "rimraf {dist,*.tsbuildinfo}",
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
     "copyfiles": "copyfiles -u 1 \"src/**/*.{html,css,scss,ttf,woff,woff2,eot,svg,jpg,png,json}\" dist/",
     "dev": "next dev dev --turbo",
     "dev:generate-importmap": "pnpm dev:payload generate:importmap",
