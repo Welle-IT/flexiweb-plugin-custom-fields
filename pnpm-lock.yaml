@@ -66,8 +66,8 @@ importers:
         specifier: ^16.8.1
         version: 16.11.0
       mongodb-memory-server:
-        specifier: 10.1.4
-        version: 10.1.4
+        specifier: 10.2.1
+        version: 10.2.1
       next:
         specifier: 15.4.4
         version: 15.4.4(@playwright/test@1.55.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.77.4)
@@ -4033,12 +4033,12 @@ packages:
   mongodb-connection-string-url@3.0.2:
     resolution: {integrity: sha512-rMO7CGo/9BFwyZABcKAWL8UJwH/Kc2x0g72uhDWzG48URRax5TCIcJ7Rc3RZqffZzO/Gwff/jyKwCU9TN8gehA==}
 
-  mongodb-memory-server-core@10.1.4:
-    resolution: {integrity: sha512-o8fgY7ZalEd8pGps43fFPr/hkQu1L8i6HFEGbsTfA2zDOW0TopgpswaBCqDr0qD7ptibyPfB5DmC+UlIxbThzA==}
+  mongodb-memory-server-core@10.2.1:
+    resolution: {integrity: sha512-vXMZkwV2wj0a8GtewgXJdX5Kh6BfPDJDLxhg5IKuFB4IOW7Qr2+oviODkf2FM3nEpj/E6krXq2SvDrJmnWOigQ==}
     engines: {node: '>=16.20.1'}
 
-  mongodb-memory-server@10.1.4:
-    resolution: {integrity: sha512-+oKQ/kc3CX+816oPFRtaF0CN4vNcGKNjpOQe4bHo/21A3pMD+lC7Xz1EX5HP7siCX4iCpVchDMmCOFXVQSGkUg==}
+  mongodb-memory-server@10.2.1:
+    resolution: {integrity: sha512-wvPofpRZHB4dGwHFplhKYYTwujrcAA0WbIXFNld5hNM6Y+yZWPP5uS8Tw54rOGx9gfr8qwGbDVy9vdNcMG+o+w==}
     engines: {node: '>=16.20.1'}
 
   mongodb@6.12.0:
@@ -9799,7 +9799,7 @@ snapshots:
       '@types/whatwg-url': 11.0.5
       whatwg-url: 14.2.0
 
-  mongodb-memory-server-core@10.1.4:
+  mongodb-memory-server-core@10.2.1:
     dependencies:
       async-mutex: 0.5.0
       camelcase: 6.3.0
@@ -9824,9 +9824,9 @@ snapshots:
       - socks
       - supports-color
 
-  mongodb-memory-server@10.1.4:
+  mongodb-memory-server@10.2.1:
     dependencies:
-      mongodb-memory-server-core: 10.1.4
+      mongodb-memory-server-core: 10.2.1
       tslib: 2.8.1
     transitivePeerDependencies:
       - '@aws-sdk/credential-providers'
