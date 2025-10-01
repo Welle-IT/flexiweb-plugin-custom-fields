@@ -1,0 +1,36 @@
+.bfOpeningHoursFieldWrapper .opening-hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--base) * 0.5);
+}
+
+.bfOpeningHoursFieldWrapper .opening-hours-row {
+  display: grid;
+  grid-template-columns: 4rem 6rem 1fr auto 1fr;
+  align-items: center;
+  gap: calc(var(--base) * 0.5);
+}
+
+.bfOpeningHoursFieldWrapper .oh-day {
+  color: var(--theme-elevation-500);
+}
+
+.bfOpeningHoursFieldWrapper .oh-open {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.bfOpeningHoursFieldWrapper .oh-time {
+  padding: 0.75rem;
+}
+
+.bfOpeningHoursFieldWrapper .oh-time[aria-invalid="true"] {
+  outline: 1px solid var(--theme-error-500);
+}
+
+.bfOpeningHoursFieldWrapper .oh-sep {
+  text-align: center;
+}
+
+

@@ -2,6 +2,9 @@ import { sqliteAdapter } from '@payloadcms/db-sqlite'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import path from 'path'
 import { buildConfig } from 'payload'
+import { de } from 'payload/i18n/de'
+import { en } from 'payload/i18n/en'
+import { hu } from 'payload/i18n/hu'
 import sharp from 'sharp'
 import { fileURLToPath } from 'url'
 
@@ -9,6 +12,7 @@ import { AlertBoxExamples } from './collections/alert-examples.js'
 import { ColourTextExamples } from './collections/colour-text-examples.js'
 import { ComboExamples } from './collections/combo-examples.js'
 import { NumberExamples } from './collections/number-examples.js'
+import { OpeningHoursExamples } from './collections/opening-hours-examples.js'
 import { PatternExamples } from './collections/pattern-examples.js'
 import { RangeExamples } from './collections/range-examples.js'
 import { SlugExamples } from './collections/slug-examples.js'
@@ -42,6 +46,7 @@ export default buildConfig({
     RangeExamples,
     SlugExamples,
     TelephoneExamples,
+    OpeningHoursExamples,
   ],
   db: sqliteAdapter({
     client: {
@@ -49,6 +54,14 @@ export default buildConfig({
     },
   }),
   editor: lexicalEditor(),
+  i18n: {
+    fallbackLanguage: 'de',
+    supportedLanguages: {
+      de,
+      en,
+      hu,
+    },
+  },
   onInit: async (payload) => {
     await seed(payload)
   },

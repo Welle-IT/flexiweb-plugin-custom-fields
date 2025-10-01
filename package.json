@@ -1,9 +1,11 @@
 {
   "name": "@flexiweb/custom-fields",
   "version": "1.0.4",
-  "description": "A blank template to get started with Payload 3.0",
+  "description": "Custom PayloadCMS V3 fields to make your life easier. Feel free to use them in your projects and customize them to your needs. Contributions are welcome!",
   "license": "MIT",
   "type": "module",
+  "repository": "https://github.com/Welle-IT/flexiweb-plugin-custom-fields",
+  "author": "flexiweb",
   "exports": {
     ".": {
       "import": "./src/index.ts",
@@ -89,8 +91,23 @@
       "import": "./src/exports/ColourText/client.ts",
       "types": "./src/exports/ColourText/client.ts",
       "default": "./src/exports/ColourText/client.ts"
+    },
+    "./OpeningHours": {
+      "import": "./src/exports/OpeningHours/index.ts",
+      "types": "./src/exports/OpeningHours/index.ts",
+      "default": "./src/exports/OpeningHours/index.ts"
+    },
+    "./OpeningHours/client": {
+      "import": "./src/exports/OpeningHours/client.ts",
+      "types": "./src/exports/OpeningHours/client.ts",
+      "default": "./src/exports/OpeningHours/client.ts"
     }
   },
+  "keywords": [
+    "payloadcms",
+    "plugin",
+    "custom-fields"
+  ],
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "files": [
@@ -148,7 +165,7 @@
     "vitest": "^3.1.2"
   },
   "peerDependencies": {
-    "payload": "^3.57.0"
+    "payload": "3.57.0"
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0",
