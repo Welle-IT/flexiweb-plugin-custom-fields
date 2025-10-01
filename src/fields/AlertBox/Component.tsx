@@ -29,7 +29,11 @@ export const AlertBoxComponent: React.FC<Props> = (props) => {
   }
 
   return (
-    <div className={`bfAlertBoxFieldWrapper ${String(type) + 'AlertType'} ${className ?? ''} `} role="status">
+    <div
+      aria-live="polite"
+      className={`bfAlertBoxFieldWrapper ${String(type) + 'AlertType'} ${className ?? ''}`}
+      role="status"
+    >
       {icon?.enable && <div className="iconContainer">{iconMap[type]}</div>}
       <div className="contentContainer">{message ?? ''}</div>
     </div>

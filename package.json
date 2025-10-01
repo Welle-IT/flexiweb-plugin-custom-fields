@@ -19,6 +19,76 @@
       "import": "./src/exports/AlertBox/client.ts",
       "types": "./src/exports/AlertBox/client.ts",
       "default": "./src/exports/AlertBox/client.ts"
+    },
+    "./Telephone": {
+      "import": "./src/exports/Telephone/index.ts",
+      "types": "./src/exports/Telephone/index.ts",
+      "default": "./src/exports/Telephone/index.ts"
+    },
+    "./Telephone/client": {
+      "import": "./src/exports/Telephone/client.ts",
+      "types": "./src/exports/Telephone/client.ts",
+      "default": "./src/exports/Telephone/client.ts"
+    },
+    "./Slug": {
+      "import": "./src/exports/Slug/index.ts",
+      "types": "./src/exports/Slug/index.ts",
+      "default": "./src/exports/Slug/index.ts"
+    },
+    "./Slug/client": {
+      "import": "./src/exports/Slug/client.ts",
+      "types": "./src/exports/Slug/client.ts",
+      "default": "./src/exports/Slug/client.ts"
+    },
+    "./Range": {
+      "import": "./src/exports/Range/index.ts",
+      "types": "./src/exports/Range/index.ts",
+      "default": "./src/exports/Range/index.ts"
+    },
+    "./Range/client": {
+      "import": "./src/exports/Range/client.ts",
+      "types": "./src/exports/Range/client.ts",
+      "default": "./src/exports/Range/client.ts"
+    },
+    "./Pattern": {
+      "import": "./src/exports/Pattern/index.ts",
+      "types": "./src/exports/Pattern/index.ts",
+      "default": "./src/exports/Pattern/index.ts"
+    },
+    "./Pattern/client": {
+      "import": "./src/exports/Pattern/client.ts",
+      "types": "./src/exports/Pattern/client.ts",
+      "default": "./src/exports/Pattern/client.ts"
+    },
+    "./Number": {
+      "import": "./src/exports/Number/index.ts",
+      "types": "./src/exports/Number/index.ts",
+      "default": "./src/exports/Number/index.ts"
+    },
+    "./Number/client": {
+      "import": "./src/exports/Number/client.ts",
+      "types": "./src/exports/Number/client.ts",
+      "default": "./src/exports/Number/client.ts"
+    },
+    "./Combo": {
+      "import": "./src/exports/Combo/index.ts",
+      "types": "./src/exports/Combo/index.ts",
+      "default": "./src/exports/Combo/index.ts"
+    },
+    "./Combo/client": {
+      "import": "./src/exports/Combo/client.ts",
+      "types": "./src/exports/Combo/client.ts",
+      "default": "./src/exports/Combo/client.ts"
+    },
+    "./ColourText": {
+      "import": "./src/exports/ColourText/index.ts",
+      "types": "./src/exports/ColourText/index.ts",
+      "default": "./src/exports/ColourText/index.ts"
+    },
+    "./ColourText/client": {
+      "import": "./src/exports/ColourText/client.ts",
+      "types": "./src/exports/ColourText/client.ts",
+      "default": "./src/exports/ColourText/client.ts"
     }
   },
   "main": "./src/index.ts",
@@ -47,13 +117,11 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
-    "@payloadcms/db-mongodb": "3.37.0",
-    "@payloadcms/db-postgres": "3.37.0",
-    "@payloadcms/db-sqlite": "3.37.0",
+    "@payloadcms/db-sqlite": "3.57.0",
     "@payloadcms/eslint-config": "3.9.0",
-    "@payloadcms/next": "3.37.0",
-    "@payloadcms/richtext-lexical": "3.37.0",
-    "@payloadcms/ui": "3.37.0",
+    "@payloadcms/next": "3.57.0",
+    "@payloadcms/richtext-lexical": "3.57.0",
+    "@payloadcms/ui": "3.57.0",
     "@playwright/test": "^1.52.0",
     "@swc-node/register": "1.10.9",
     "@swc/cli": "0.6.0",
@@ -65,10 +133,9 @@
     "eslint": "^9.23.0",
     "eslint-config-next": "15.4.4",
     "graphql": "^16.8.1",
-    "mongodb-memory-server": "10.1.4",
     "next": "15.4.4",
     "open": "^10.1.0",
-    "payload": "3.37.0",
+    "payload": "3.57.0",
     "prettier": "^3.4.2",
     "qs-esm": "7.0.2",
     "react": "19.1.0",
@@ -81,7 +148,7 @@
     "vitest": "^3.1.2"
   },
   "peerDependencies": {
-    "payload": "^3.37.0"
+    "payload": "^3.57.0"
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0",
@@ -126,5 +193,9 @@
     ]
   },
   "registry": "https://registry.npmjs.org/",
-  "dependencies": {}
+  "dependencies": {
+    "libphonenumber-js": "^1.12.23",
+    "react-number-format": "^5.4.4",
+    "react-phone-number-input": "^3.4.12"
+  }
 }

@@ -5,7 +5,14 @@ import { buildConfig } from 'payload'
 import sharp from 'sharp'
 import { fileURLToPath } from 'url'
 
-import { AlertBoxExamples } from './collections/alerts.js'
+import { AlertBoxExamples } from './collections/alert-examples.js'
+import { ColourTextExamples } from './collections/colour-text-examples.js'
+import { ComboExamples } from './collections/combo-examples.js'
+import { NumberExamples } from './collections/number-examples.js'
+import { PatternExamples } from './collections/pattern-examples.js'
+import { RangeExamples } from './collections/range-examples.js'
+import { SlugExamples } from './collections/slug-examples.js'
+import { TelephoneExamples } from './collections/telephone-examples.js'
 import { Users } from './collections/users.js'
 import { seed } from './seed.js'
 
@@ -25,7 +32,17 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, AlertBoxExamples],
+  collections: [
+    Users,
+    AlertBoxExamples,
+    ColourTextExamples,
+    ComboExamples,
+    NumberExamples,
+    PatternExamples,
+    RangeExamples,
+    SlugExamples,
+    TelephoneExamples,
+  ],
   db: sqliteAdapter({
     client: {
       url: process.env.DATABASE_URI || '',
