@@ -1,6 +1,6 @@
 {
   "name": "@flexiweb/custom-fields",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Custom PayloadCMS V3 fields to make your life easier. Feel free to use them in your projects and customize them to your needs. Contributions are welcome!",
   "license": "MIT",
   "type": "module",
