@@ -178,25 +178,95 @@
         "types": "./dist/index.d.ts",
         "default": "./dist/index.js"
       },
-      "./client": {
-        "import": "./dist/exports/client.js",
-        "types": "./dist/exports/client.d.ts",
-        "default": "./dist/exports/client.js"
-      },
-      "./rsc": {
-        "import": "./dist/exports/rsc.js",
-        "types": "./dist/exports/rsc.d.ts",
-        "default": "./dist/exports/rsc.js"
-      },
       "./AlertBox": {
-        "import": "./dist/exports/AlertBox/index.js",
-        "types": "./dist/exports/AlertBox/index.d.ts",
-        "default": "./dist/exports/AlertBox/index.js"
+        "import": "./src/exports/AlertBox/index.ts",
+        "types": "./src/exports/AlertBox/index.ts",
+        "default": "./src/exports/AlertBox/index.ts"
       },
       "./AlertBox/client": {
-        "import": "./dist/exports/AlertBox/client.js",
-        "types": "./dist/exports/AlertBox/client.d.ts",
-        "default": "./dist/exports/AlertBox/client.js"
+        "import": "./src/exports/AlertBox/client.ts",
+        "types": "./src/exports/AlertBox/client.ts",
+        "default": "./src/exports/AlertBox/client.ts"
+      },
+      "./Telephone": {
+        "import": "./src/exports/Telephone/index.ts",
+        "types": "./src/exports/Telephone/index.ts",
+        "default": "./src/exports/Telephone/index.ts"
+      },
+      "./Telephone/client": {
+        "import": "./src/exports/Telephone/client.ts",
+        "types": "./src/exports/Telephone/client.ts",
+        "default": "./src/exports/Telephone/client.ts"
+      },
+      "./Slug": {
+        "import": "./src/exports/Slug/index.ts",
+        "types": "./src/exports/Slug/index.ts",
+        "default": "./src/exports/Slug/index.ts"
+      },
+      "./Slug/client": {
+        "import": "./src/exports/Slug/client.ts",
+        "types": "./src/exports/Slug/client.ts",
+        "default": "./src/exports/Slug/client.ts"
+      },
+      "./Range": {
+        "import": "./src/exports/Range/index.ts",
+        "types": "./src/exports/Range/index.ts",
+        "default": "./src/exports/Range/index.ts"
+      },
+      "./Range/client": {
+        "import": "./src/exports/Range/client.ts",
+        "types": "./src/exports/Range/client.ts",
+        "default": "./src/exports/Range/client.ts"
+      },
+      "./Pattern": {
+        "import": "./src/exports/Pattern/index.ts",
+        "types": "./src/exports/Pattern/index.ts",
+        "default": "./src/exports/Pattern/index.ts"
+      },
+      "./Pattern/client": {
+        "import": "./src/exports/Pattern/client.ts",
+        "types": "./src/exports/Pattern/client.ts",
+        "default": "./src/exports/Pattern/client.ts"
+      },
+      "./Number": {
+        "import": "./src/exports/Number/index.ts",
+        "types": "./src/exports/Number/index.ts",
+        "default": "./src/exports/Number/index.ts"
+      },
+      "./Number/client": {
+        "import": "./src/exports/Number/client.ts",
+        "types": "./src/exports/Number/client.ts",
+        "default": "./src/exports/Number/client.ts"
+      },
+      "./Combo": {
+        "import": "./src/exports/Combo/index.ts",
+        "types": "./src/exports/Combo/index.ts",
+        "default": "./src/exports/Combo/index.ts"
+      },
+      "./Combo/client": {
+        "import": "./src/exports/Combo/client.ts",
+        "types": "./src/exports/Combo/client.ts",
+        "default": "./src/exports/Combo/client.ts"
+      },
+      "./ColourText": {
+        "import": "./src/exports/ColourText/index.ts",
+        "types": "./src/exports/ColourText/index.ts",
+        "default": "./src/exports/ColourText/index.ts"
+      },
+      "./ColourText/client": {
+        "import": "./src/exports/ColourText/client.ts",
+        "types": "./src/exports/ColourText/client.ts",
+        "default": "./src/exports/ColourText/client.ts"
+      },
+      "./OpeningHours": {
+        "import": "./src/exports/OpeningHours/index.ts",
+        "types": "./src/exports/OpeningHours/index.ts",
+        "default": "./src/exports/OpeningHours/index.ts"
+      },
+      "./OpeningHours/client": {
+        "import": "./src/exports/OpeningHours/client.ts",
+        "types": "./src/exports/OpeningHours/client.ts",
+        "default": "./src/exports/OpeningHours/client.ts"
       }
     },
     "main": "./dist/index.js",
