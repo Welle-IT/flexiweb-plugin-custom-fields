@@ -62,7 +62,12 @@ export const TelephoneComponent: React.FC<Props> = (props) => {
   const isReadonly = Boolean(readOnly) || Boolean(adminReadOnly)
 
   return (
-    <div className={`bfTelephoneFieldWrapper field-type`}>
+    <div
+      className={`bfTelephoneFieldWrapper field-type`}
+      style={{
+        width,
+      }}
+    >
       <RenderCustomComponent
         CustomComponent={Label}
         Fallback={<FieldLabel label={label} path={path} required={required} />}
@@ -85,7 +90,7 @@ export const TelephoneComponent: React.FC<Props> = (props) => {
           readOnly={isReadonly}
           required={required}
           style={{
-            width,
+            width: '100%',
             ...style,
           }}
           value={value}

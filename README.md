@@ -3,6 +3,11 @@
 This plugin provides a set of ready-to-use custom fields for Payload CMS v3.
 Built on top of [Nouncelabs custom fields plugin.](https://github.com/NouanceLabs/payload-better-fields-plugin)
 
+Supported languages:
+- German
+- English
+- Hungarian
+
 ## Documentation
 
 - [AlertBox](docs/AlertBox.md)

@@ -9,17 +9,26 @@ export const TelephoneExamples: CollectionConfig = {
   },
   fields: [
     {
-      name: 'title',
-      type: 'text',
+      type: 'row',
+      fields: [
+        {
+          name: 'title',
+          type: 'text',
+          admin: {
+            width: '50%',
+          },
+        },
+        ...TelephoneField({
+          name: 'telephone',
+          admin: {
+            placeholder: '+436501234567',
+            width: '45%',
+          },
+          required: true,
+        }),
+      ],
     },
-    ...TelephoneField({
-      name: 'telephone',
-      admin: {
-        placeholder: '+436501234567',
-        width: '33%',
-      },
-      required: true,
-    }),
+
     ...TelephoneField(
       {
         name: 'fax',

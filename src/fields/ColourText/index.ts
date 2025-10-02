@@ -1,6 +1,7 @@
 import type { Field, TextField } from 'payload'
 
 import { deepMerge } from 'payload'
+
 import { validate } from './validate.js'
 
 export type Config = object
